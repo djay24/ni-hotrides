@@ -6,6 +6,7 @@
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/signup.css">
   </head>
   <body>
     <!--NAV BAR-->
@@ -34,38 +35,36 @@
   </div>
 </nav>
 <!-- NAV BAR ENDS-->
-<div class="container-fluid">
-    <div class="row">
-      <div class="col-sm-12">
-        <div class="jumbotron roboto">
-          <h1>Free Rides to Cooling Centers.</h1>
-          <h2>Serving <span class="underline bold"><i>senior residents</i></span> in the Central Valley.</h2>
-          <br>
-          <ul class="main-list center-block">
-            <li><span class="glyphicon glyphicon-ok"></span> We notify you when temperature is dangerously high.</li>
-            <li><span class="glyphicon glyphicon-ok"></span> Care-takers welcome.</li>
-            <li><span class="glyphicon glyphicon-ok"></span> COMPLETELY FREE!</li>
-          </ul>
-        </div>
-      </div>
-    </div>
 
-    <div class="row">
-      <div class="col-sm-12 ">
-          <button class="btn btn-primary get-ride roboto bold underline center-block"><h2>GET A FREE RIDE TO SOMEWHERE COOL NOW!</h2></button>
-      </div>
+<!-- form for signup page -->
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-6 signup-form">
+      <p class="padding-after">Name</p> <input class="input-box" id="nameBox" type="text" name="Name" placeholder="Ben Franklin" value="" required>
+      <p class="padding-after">Email address</p> <input class="input-box" id="emailBox" type="text" name="Email" value="" placeholder="BFrank@gmail.com">
+      <p class="padding-after">Address</p> <input class="input-box" id="addressBox" type="text" name="address" value="" placeholder="1234 Sesame St.">
+      <p class="padding-after">City</p> <input class="input-box" id="cityBox" type="text" name="City" value="" placeholder="Los Angeles">
+      <p class="padding-after">State</p> <input class="input-box" id="stateBox" type="text" name="State" value="" placeholder="California">
+
+      <button class="form-button" id="submit">Submit</button>
+
     </div>
+  </div>
 </div>
 
 
 
-    <script type="text/javascript" src="js/scripts.js"></script>
+<!-- end of form -->
 
-    <script src="https://code.jquery.com/jquery-2.2.4.js"
-    integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
-    crossorigin="anonymous">
-  </script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/scripts.js"></script>
+<script type="text/javascript" src="js/signup.js">
 
-  </body>
+</script>
+<script src="https://code.jquery.com/jquery-2.2.4.js"
+integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+crossorigin="anonymous">
+</script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+</body>
 </html>

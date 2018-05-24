@@ -1,0 +1,16 @@
+.signup-form {
+  background-color: ;
+  height: 75vh;
+  border: solid 1px black;
+  padding: 10px;
+}
+.padding-after {
+  padding-top: 10px;
+}
+.form-button {
+  background-color: red;
+  color: white;
+}
+.form-button:hover {
+  transform:scale(1.5);
+}
