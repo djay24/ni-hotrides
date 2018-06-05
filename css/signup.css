@@ -1,16 +1,35 @@
 .signup-form {
   background-color: ;
-  height: 75vh;
+  height: ;
   border: solid 1px black;
   padding: 10px;
+  text-align: center;
 }
 .padding-after {
   padding-top: 10px;
 }
 .form-button {
-  background-color: red;
+  background-color: #00c42d;
   color: white;
+  margin-top: 10px;
 }
 .form-button:hover {
   transform:scale(1.5);
+}
+.signin-button:hover {
+
+}
+.center-text {
+  text-align: center;
+}
+.signin {
+  height: 6vh;
+  width: 100%;
+  margin-bottom: 20px;
+  color: white;
+  background-color: red;
+  font-size: 20px;
+}
+.signin:hover {
+  transform:scale(1.3);
 }
