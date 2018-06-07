@@ -8,10 +8,10 @@
 //   console.log('hi')
 // }
 
-let yourZip = prompt('what is your zip code');
+let yourCity = prompt('what city do you live in?');
 
 let weatherRequest = new XMLHttpRequest();
-let weatherURL = `http://api.openweathermap.org/data/2.5/weather?zip=` + yourZip +`,us&units=imperial&appid=c706bd203a749d73c30c1ab92dc6b102`;
+let weatherURL = `http://api.openweathermap.org/data/2.5/weather?q=` + yourCity +`,us&units=imperial&appid=c706bd203a749d73c30c1ab92dc6b102`;
 
 weatherRequest.open("GET", weatherURL, true);
 weatherRequest.send();
@@ -26,5 +26,6 @@ function getElements(data) {
   let weather = data
   console.log("it went through")
   console.log(weatherURL);
-  console.log("The temperature is " + weather.main.temp)
+  let currentWeather = (weather.main.temp);
+  console.log(currentWeather)
 }

@@ -4,8 +4,8 @@ document.getElementById("submit").addEventListener("click", function() {
   document.getElementById("nameBox").value = "";
   let yourEmail = document.getElementById("emailBox").value;
   document.getElementById("emailBox").value = "";
-  let yourUser = document.getElementById("userBox").value;
-  document.getElementById("userBox").value = "";
+  let yourPhone = document.getElementById("phoneBox").value;
+  document.getElementById("phoneBox").value = "";
   let yourPassword = document.getElementById("passwordBox").value;
   document.getElementById("passwordBox").value = "";
   let yourAddress = document.getElementById("addressBox").value;
@@ -16,12 +16,29 @@ document.getElementById("submit").addEventListener("click", function() {
   document.getElementById("stateBox").value = "";
   console.log(yourName);
   console.log(yourEmail);
-  console.log(yourUser);
+  console.log(yourPhone);
   console.log(yourPassword);
   console.log(yourAddress);
   console.log(yourCity);
   console.log(yourState);
+
+  let user = {
+    name: yourName,
+    email: yourEmail,
+    phone_number: yourPhone,
+    password: yourPassword,
+    address: yourAddress,
+    city: yourCity,
+    state: yourState
+  }
+  person = JSON.stringify(user);
+  console.log(user)
+  // end of JSON
 })
+
+// trying to get variables to JSON format
+
+
 
 // submit values by hitting enter
 document.getElementById('nameBox').addEventListener("keyup", function() {
@@ -32,7 +49,7 @@ document.getElementById('emailBox').addEventListener("keyup", function() {
   if (event.keyCode === 13)
   document.getElementById("submit").click();
 });
-document.getElementById('userBox').addEventListener("keyup", function() {
+document.getElementById('phoneBox').addEventListener("keyup", function() {
   if (event.keyCode === 13)
   document.getElementById("submit").click();
 });
