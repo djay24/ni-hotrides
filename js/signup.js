@@ -22,6 +22,8 @@ document.getElementById("submit").addEventListener("click", function() {
   console.log(yourCity);
   console.log(yourState);
 
+
+// getting input data and putting into json form
   let user = {
     name: yourName,
     email: yourEmail,
@@ -36,7 +38,6 @@ document.getElementById("submit").addEventListener("click", function() {
   // end of JSON
 })
 
-// trying to get variables to JSON format
 
 
 
