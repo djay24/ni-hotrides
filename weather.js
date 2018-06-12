@@ -10,6 +10,8 @@
 
 let yourCity = prompt('what city do you live in?');
 
+
+
 let weatherRequest = new XMLHttpRequest();
 let weatherURL = `http://api.openweathermap.org/data/2.5/weather?q=` + yourCity +`,us&units=imperial&appid=c706bd203a749d73c30c1ab92dc6b102`;
 
@@ -27,5 +29,10 @@ function getElements(data) {
   console.log("it went through")
   console.log(weatherURL);
   let currentWeather = (weather.main.temp);
-  console.log(currentWeather)
+  console.log(currentWeather);
+  weatherBox(currentWeather);
+}
+
+function weatherBox(weather) {
+  let weatherBox = document.getElementById('weatherBox')
 }

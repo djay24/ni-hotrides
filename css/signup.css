@@ -33,3 +33,8 @@
 .signin:hover {
   transform:scale(1.3);
 }
+.weather-box {
+  height: 100px;
+  color: white;
+  background-color: black;
+}

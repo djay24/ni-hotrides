@@ -16,3 +16,8 @@ document.getElementById('passwordBox').addEventListener("keyup", function() {
   if (event.keyCode === 13)
   document.getElementById("submit").click();
 });
+
+let submitButton = document.getElementById('submit');
+submitButton.addEventListener('click', function() {
+  location.href = "signin-home.html"
+})
